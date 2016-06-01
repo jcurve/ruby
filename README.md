@@ -846,7 +846,7 @@ In either case:
       end
     end
     
-    #lib/presenter/user_presenter.rb
+    # lib/presenter/user_presenter.rb
     module Presenter
       class UserPresenter
         # class details
