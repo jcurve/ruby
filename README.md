@@ -1,6 +1,6 @@
 # Ruby Style Guide
 
-This is [Airbnb's Ruby Style Guide](https://github.com/airbnb/ruby), modified by us to cater to our need. Feel free to change/add/discuss new ideas as we go.
+This is a fork from [Airbnb's Ruby Style Guide](https://github.com/airbnb/ruby), modified by us to cater to our need. Feel free to change/add/discuss new ideas as we go.
 
 ## Table of Contents
   1. [Whitespace](#whitespace)
