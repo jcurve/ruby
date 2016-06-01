@@ -819,13 +819,13 @@ Business entities should have a descriptive name, support classes should be name
     end
 
     # good
-    module Record
+    module Records
       class UserRecord
         # class details
       end
     end
     
-    module Presenter
+    module Presenters
       class UserPresenter
         # class details
       end
@@ -837,15 +837,15 @@ Business entities should have a descriptive name, support classes should be name
 * <a name="naming-nested-classes"></a>Only use one class per file and place each file in a folder with the same name as its namespace. The file name should be a sneak case of the class name. In the above example:
 
     ```ruby
-    # lib/record/user_record.rb
-    module Record
+    # lib/records/user_record.rb
+    module Records
       class UserRecord
         # class details
       end
     end
     
-    # lib/presenter/user_presenter.rb
-    module Presenter
+    # lib/presenters/user_presenter.rb
+    module Presenters
       class UserPresenter
         # class details
       end
