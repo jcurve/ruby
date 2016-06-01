@@ -798,6 +798,8 @@ In either case:
 
 ## Naming
 
+Business entities should have a descriptive name, support classes should be named for what they operate on and what they do, regardless of any name-spacing we might have.
+
 ### Naming nested classes
 
 * <a name="naming-nested-classes"></a>If a class is nested under a module which represents a certain functionality, include the name of the module at the end of each class.
