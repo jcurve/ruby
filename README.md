@@ -25,6 +25,9 @@ Airbnb also maintains a [JavaScript Style Guide][airbnb-javascript].
   1. [Conditional Expressions](#conditional-expressions)
     1. [Conditional keywords](#conditional-keywords)
     1. [Ternary operator](#ternary-operator)
+  1. [Naming](#naming)
+    1. [Naming nested classes](#naming-nested-classes)
+    1. [Naming files](#naming-files)
   1. [Syntax](#syntax)
   1. [Naming](#naming)
   1. [Classes](#classes)
@@ -794,6 +797,60 @@ In either case:
       something
     else
       something_else
+    end
+    ```
+
+## Naming
+
+### Naming nested classes
+
+* <a name="naming-nested-classes"></a>If a class is nested under a module which represents a certain functionality, include the name of the module at the end of each class.
+
+    ```ruby
+    # bad
+    module Record
+      class User
+        # class details
+      end
+    end
+    
+    module Presenter
+      class User
+        # class details
+      end
+    end
+
+    # good
+    module Record
+      class UserRecord
+        # class details
+      end
+    end
+    
+    module Presenter
+      class UserPresenter
+        # class details
+      end
+    end
+    ```
+
+### Naming files
+
+* <a name="naming-nested-classes"></a>Only use one class per file and place each file in a folder with the same name as its namespace. The file name should be a sneak case of the class name. In the above example:
+
+    ```ruby
+    # lib/record/user_record.rb
+    module Record
+      class UserRecord
+        # class details
+      end
+    end
+    
+    #lib/presenter/user_presenter.rb
+    module Presenter
+      class UserPresenter
+        # class details
+      end
     end
     ```
 
